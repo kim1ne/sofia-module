@@ -3,7 +3,7 @@
 return [
     'controllers' => [
         'value' => [
-            'defaultNamespace' => '\\Neti\\Blank\\Controller',
+            'defaultNamespace' => '\\Sofia\\Test\\News',
         ],
         'readonly' => true,
     ],

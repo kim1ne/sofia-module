@@ -7,11 +7,6 @@ use Bitrix\Main\Type\DateTime;
 
 class NewsTable extends ORM\Data\DataManager
 {
-    const TITLE = 'TITLE';
-    const DESCRIPTION = 'DESCRIPTION';
-    const AUTHOR_ID = 'AUTHOR_ID';
-    const DATE_CREATED = 'DATE_CREATED';
-
     public static function getMap(): array
     {
         return [
