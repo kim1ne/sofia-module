@@ -1,0 +1,10 @@
+#sofia tr > th,
+#sofia tr > td {
+    width: 130px;
+    text-align: center;
+}
+
+#sofia tr:hover{
+    background-color: rgba(75, 108, 128, 0.37);
+    cursor: pointer;
+}
