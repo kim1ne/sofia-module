@@ -246,6 +246,7 @@ function deleteRow(id) {
         if (row) {
             row.remove();
             clearButtonMenu();
+            window.location.reload();
         }
     }).catch((response) => {
         console.log(response)

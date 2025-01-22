@@ -21,7 +21,7 @@ $page = (int) $arResult['PAGE'];
     </thead>
     <tbody>
         <?php foreach($arResult['ITEMS'] as $data): ?>
-        <tr data-id="<?=$data['ID'] ?>">
+        <tr data-id-row="<?=$data['ID'] ?>">
             <td data-field="TITLE"><?=$data['TITLE'] ?></td>
             <td data-field="DESCRIPTION"><?=$data['DESCRIPTION'] ?></td>
             <td data-field="DATE_CREATED"><?=$data['DATE_CREATED']->format('Y-m-d') ?></td>
