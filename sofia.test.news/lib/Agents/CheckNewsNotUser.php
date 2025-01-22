@@ -13,7 +13,13 @@ class CheckNewsNotUser
         $res = NewsTable::getList([
             'select' => ['ID'],
             'filter' => [
-                'AUTHOR_ID' => 0
+                'LOGIC' => 'OR',
+                [
+                    'AUTHOR_ID' => 0
+                ],
+                [
+                    'AUTHOR_ID' => NULL
+                ]
             ]
         ]);
 
