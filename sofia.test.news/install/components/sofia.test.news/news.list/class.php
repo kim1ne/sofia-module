@@ -19,14 +19,6 @@ class NewsListComponent extends \CBitrixComponent implements Controllerable
         $this->arResult['PAGE'] = $page;
         $this->arResult['PAGE_SIZE'] = $arParams['PAGE_SIZE'] ?? 10;
 
-        $filterDate = $arParams['FILTER_DATE'];
-
-        $date = null;
-        if (!empty($filterDate)) {
-            $timestamp = strtolower($filterDate);
-            $date = \Bitrix\Main\Type\DateTime::createFromTimestamp($timestamp);
-        }
-
         $this->arResult['DATE_DIRECTION'] = $arParams['DATE_DIRECTION'];
     }
 
