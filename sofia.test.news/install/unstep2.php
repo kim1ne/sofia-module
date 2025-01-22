@@ -14,7 +14,7 @@ if ($ex = $APPLICATION->GetException()) {
         "HTML" => 'HTML'
     ));
 } else {
-    echo CAdminMessage::ShowNote(Loc::getMessage("MOD_INST_OK"));
+    echo CAdminMessage::ShowNote(Loc::getMessage("MOD_UNINST_OK"));
 }
 ?>
 <form action="<?= $APPLICATION->GetCurPage(); ?>" name="blank-install">
