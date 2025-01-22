@@ -23,7 +23,7 @@ class CheckNewsNotUser
             $ids[] = $row['ID'];
         }
 
-        $method = __METHOD__ . '();';
+        $method = '\\' . __METHOD__ . '();';
 
         if (empty($ids)) {
             return $method;
