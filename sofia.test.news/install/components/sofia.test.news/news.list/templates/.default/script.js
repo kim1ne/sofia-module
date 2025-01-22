@@ -4,7 +4,7 @@ BX.ready(function () {
 
     trRows.forEach(tr => {
         tr.addEventListener('click', (e) => {
-            let id = tr.dataset.id;
+            let id = tr.dataset.idRow;
 
             if (!id) {
                 return;
@@ -185,7 +185,7 @@ function getEditForm(row) {
         }));
     });
 
-    let id = row.dataset.id;
+    let id = row.dataset.idRow;
 
     return BX.create('form', {
         children: children,
@@ -231,7 +231,7 @@ function getForm(id) {
 }
 
 function getRow(id) {
-    return document.querySelector('[data-id="' + id + '"]');
+    return document.querySelector('[data-id-row="' + id + '"]');
 }
 
 function deleteRow(id) {
